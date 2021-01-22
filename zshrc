@@ -25,7 +25,7 @@ alias ls='ls --color=auto'
 alias ll='ls -la'
 
 ## Show hidden files ##
-alias l.='ls -d .* --color=auto'
+alias l.='ls -ld .* --color=auto'
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

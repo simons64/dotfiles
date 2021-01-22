@@ -22,7 +22,7 @@ while [ -n "$1" ]; do # while loop over all options
 		done
 		echo "copying .files back from $olddir"
 		cp -a $olddir/. ~/
-		rm ~/.vim/pack/typescript/* -rf
+		# rm ~/.vim/pack/typescript/* -rf
 		exit 0
 		;;	
 
