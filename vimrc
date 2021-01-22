@@ -13,7 +13,10 @@ set nocompatible
 
 " Turn on syntax highlighting.
 syntax enable 
-" filetype plugin on
+
+" Set <tab> to 4 spaces
+set ts=4 sw=4
+
 
 " Search dir recursivly
 set path+=**
