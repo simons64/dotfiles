@@ -17,7 +17,6 @@ syntax enable
 " Set <tab> to 4 spaces
 set ts=4 sw=4
 
-
 " Search dir recursivly
 set path+=**
 

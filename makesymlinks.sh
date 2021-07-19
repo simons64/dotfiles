@@ -67,11 +67,14 @@ install_vim () {
 # install vim extensions
 if [ -f /usr/bin/vim ]; then
     # if vim installed
-    git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/pack/typescript/start/typescript-vim
+	echo "vim is installed"
 else 
     # no vim installed	
     sudo apt-get install vim
 fi
+
+git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/pack/typescript/start/typescript-vim
+git clone https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
 }
 
 
@@ -92,9 +95,9 @@ fi
 
 install_zsh_extra () {
 # install zsh extensions
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
+  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 }
 
 install_vim
