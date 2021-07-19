@@ -14,8 +14,8 @@ set nocompatible
 " Turn on syntax highlighting.
 syntax enable 
 
-" Set <tab> to 4 spaces
-set ts=4 sw=4
+" Set <tab> to 2 spaces
+set ts=2 sw=2
 
 " Search dir recursivly
 set path+=**
