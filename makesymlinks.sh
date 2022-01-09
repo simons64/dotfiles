@@ -56,8 +56,8 @@ done
 
 install_vim () {
   # install vim extensions
-  if [ ! -f /usr/bin/vim ]; then
-		sudo apt-get purge vim -y
+  if [ -f /usr/bin/vim ]; then
+	sudo apt-get purge vim -y
   fi
   sudo apt-get install neovim -y
 	mkdir -p ~/.config/nvim/
