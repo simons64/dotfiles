@@ -57,8 +57,9 @@ done
 install_vim () {
   # install vim extensions
   if [ ! -f /usr/bin/vim ]; then
-    sudo apt-get install vim
+		sudo apt-get purge vim -y
   fi
+  sudo apt-get install neovim -y
 
   if [ ! -d ~/".vim/pack/typescript/start/typescript-vim" ] ; then
     git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/pack/typescript/start/typescript-vim
