@@ -60,6 +60,11 @@ install_vim () {
 		sudo apt-get purge vim -y
   fi
   sudo apt-get install neovim -y
+	mkdir -p ~/.config/nvim/
+	if [ -f ~/.config/nvim/init.vim ]; then
+		mv ~/.config/nvim/init.vim $BACKUP_DIR
+	fi
+	ln -s $DOTF_DIR/init.vim ~/.config/nvim/init.vim
 
   if [ ! -d ~/".vim/pack/typescript/start/typescript-vim" ] ; then
     git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/pack/typescript/start/typescript-vim
